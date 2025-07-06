@@ -191,7 +191,7 @@ if __name__ == "__main__":
     demanda = [random.randint(1, 50) for _ in range(100)]
     
     problema = ProblemaLote(demanda, custo_fixo=200, custo_estoque=5, capacidade=500)
-    otimizador = OtimizadorPlano(problema, num_particulas=10)
+    otimizador = OtimizadorPlano(problema, num_particulas=100)
 
     t0 = time.time()
     melhor_plano, custo_total = otimizador.PSO(
